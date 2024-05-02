@@ -1,5 +1,3 @@
-import java.util.Optional;
-
 public class Book {
     private final String name;
     private final Author author;
@@ -22,6 +20,7 @@ public class Book {
     public int getPublishYear() {
         return publishYear;
     }
+
     public void setPublishYear(int publishYear) {
         this.publishYear = publishYear;
     }

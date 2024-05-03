@@ -1,5 +1,3 @@
-import java.util.Optional;
-
 public class Book {
     private final String name;
     private final Author author;
@@ -9,6 +7,12 @@ public class Book {
         this.name = name;
         this.author = author;
         this.publishYear = publishYear;
+    }
+
+    public Book(String name, Author author) {
+        this.name = name;
+        this.author = author;
+        this.publishYear = 0;
     }
 
     public Author getAuthor() {
@@ -22,6 +26,7 @@ public class Book {
     public int getPublishYear() {
         return publishYear;
     }
+
     public void setPublishYear(int publishYear) {
         this.publishYear = publishYear;
     }

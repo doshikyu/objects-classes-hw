@@ -5,7 +5,7 @@ public class Main {
 
         Book book1 = new Book("Fathers and Sons", authorTurgenev, 1862);
         Book book2 = new Book("The Sign of the Four", authorDoyle, 1890);
-        Book book3 = new Book("The Valley of Fear", authorDoyle, 2915); //1915
+        Book book3 = new Book("The Valley of Fear", authorDoyle); //1915
 
         book3.setPublishYear(1915);
     }

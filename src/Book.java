@@ -9,6 +9,12 @@ public class Book {
         this.publishYear = publishYear;
     }
 
+    public Book(String name, Author author) {
+        this.name = name;
+        this.author = author;
+        this.publishYear = 0;
+    }
+
     public Author getAuthor() {
         return author;
     }

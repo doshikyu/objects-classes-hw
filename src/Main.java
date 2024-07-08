@@ -8,5 +8,14 @@ public class Main {
         Book book3 = new Book("The Valley of Fear", authorDoyle); //1915
 
         book3.setPublishYear(1915);
+
+        Book bookTestMethods = new Book("The Sign of the Four", authorDoyle);
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(bookTestMethods);
+        System.out.println("Are the book1 and test same? - " + book1.equals(bookTestMethods));
+        System.out.println("Are the book2 and test same? - " + book2.equals(bookTestMethods));
+
+        System.out.println("book1 name hashCode: " + book1.hashCode());
     }
 }

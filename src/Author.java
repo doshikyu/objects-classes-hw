@@ -1,10 +1,11 @@
-import javax.swing.plaf.LayerUI;
-
 public class Author {
     private final String name;
     private final String surname;
 
     public Author(String name, String surname) {
+        if (name == null || surname == null) {
+            throw new IllegalArgumentException("Author Name or Surname cannot be null");
+        }
         this.name = name;
         this.surname = surname;
     }
@@ -19,11 +20,14 @@ public class Author {
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name);
+        return java.util.Objects.hash(name, surname);
     }
 
     @Override
     public boolean equals(Object obj) {
+        if (obj == null) {
+            throw new IllegalArgumentException("Cannot compare to null object");
+        }
         if (this.getClass() != obj.getClass()) {
             return false;
         }

@@ -13,9 +13,12 @@ public class Main {
         System.out.println(book1);
         System.out.println(book2);
         System.out.println(bookTestMethods);
-        System.out.println("Are the book1 and test same? - " + book1.equals(bookTestMethods));
-        System.out.println("Are the book2 and test same? - " + book2.equals(bookTestMethods));
+        System.out.println("Are book1 and test the same? - " + book1.equals(bookTestMethods));
+        System.out.println("Are book2 and test the same? - " + book2.equals(bookTestMethods));
 
         System.out.println("book1 name hashCode: " + book1.hashCode());
+
+        //Book nullBook = new Book(null, null);
+        System.out.println("Are book2 and null the same? - " + book2.equals(null));
     }
 }

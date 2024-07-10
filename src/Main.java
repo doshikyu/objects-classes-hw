@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("book1 name hashCode: " + book1.hashCode());
 
-        //Book nullBook = new Book(null, null);
-        System.out.println("Are book2 and null the same? - " + book2.equals(null));
+        Book nullBook = new Book(null, null);
+        System.out.println("Are book2 and null the same? - " + book2.equals(nullBook));
     }
 }

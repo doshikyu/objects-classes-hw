@@ -30,4 +30,24 @@ public class Book {
     public void setPublishYear(int publishYear) {
         this.publishYear = publishYear;
     }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, author);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || this.getClass() != obj.getClass()) {
+            return false;
+        }
+        Book bookToCheck = (Book) obj;
+        return name.equals(bookToCheck.name) && author.equals(bookToCheck.author);
+    }
+
+    @Override
+    public String toString() {
+        String publishYearStr = (publishYear != 0) ? String.valueOf(publishYear) : "-";
+        return "Book Information: " + name + ", " + author + ", " + publishYearStr;
+    }
 }
